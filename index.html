@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>QIIME 2</title>
   <link rel="stylesheet" href="./assets/css/normalize.css" media="screen">
-  <link rel="stylesheet" href="./assets/css/main.css" media="screen">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="./assets/css/main.css" media="screen">
   <link rel="icon" href="./assets/favicon.ico" type="image/png" />
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,52 +19,94 @@
   </script>
 </head>
 <body>
-  <a href="https://github.com/qiime2/qiime2" id="github-banner">
-    <img
-      src="./assets/img/github_banner.png"
-      alt="Fork me on GitHub"
-    />
-  </a>
-  <div id="wrapper" class="container clearfix">
-    <div id="header">
-      <img class="img-responsive" src="./assets/img/logo400.png" alt="QIIME 2" />
-    </div>
-    <div id="content">
-      <div class="body col-lg-10 col-md-10 col-sm-12 col-xs-12 main pull-right">
-        <p>
-          QIIME™ 2 (canonically pronounced <em>chime to</em>) stands for
-          Quantitative Insights Into Microbial Ecology.
-        </p>
-        <p>
-          This site is the official source of information on QIIME&trade; 2,
-          including installation instructions, tutorials, and other
-          documentation. Visit <a href="http://qiime.org">http://qiime.org</a>
-          for information on QIIME&trade; 1.
-        </p>
-        <div class="alert alert-info" role="alert">
-          <h4>Note:</h4> QIIME 2 is in its alpha release phase. Since it
-          is alpha software, it is not necessarily stable or complete. Commands,
-          functionality, interfaces, and documentation will change as the
-          software reaches beta status. QIIME 1 is still the recommended
-          platform for microbiome analyses as it is relatively stable,
-          feature-complete, and supports high-performance computing
-          environments. QIIME 1 will continue to be supported through the end of
-          2017 to allow QIIME 2 to stabilize and users to transition to using
-          this new software. Please give QIIME 2 a try and let us know how it
-          can be improved by creating an issue on our <a
-          href="https://github.com/qiime2/qiime2/issues">issue tracker</a>.
-        </div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-      <div class="sidebar col-lg-2 col-md-2 col-sm-12 col-xs-12 side pull-left">
-        <ul>
-          <a href="https://qiime2.org"><li>Home</li></a>
-          <a href="https://docs.qiime2.org"><li>Docs</li></a>
-          <a href="https://forum.qiime2.org"><li>Forum</li></a>
-          <a href="https://view.qiime2.org"><li>View</li></a>
-          <a href="https://workshops.qiime2.org"><li>Workshops</li></a>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="https://qiime2.org">Home</a></li>
+          <li><a href="https://docs.qiime2.org">Docs</a></li>
+          <li><a href="https://forum.qiime2.org">Forum</a></li>
+          <li><a href="https://workshops.qiime2.org">Workshops</a></li>
+          <li><a href="https://view.qiime2.org">q2view</a></li>
         </ul>
+      </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./assets/img/logo400.png">
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-8">
+          <p>QIIME™ 2 (canonically pronounced chime to) stands for Quantitative
+          Insights Into Microbial Ecology.  QIIME 2 exposes the latest
+          microbiome bioinformatics methods via decentralized plugins. These
+          plugins are enabled by a feature-rich framework that allows for
+          decentralized development of open source tools, minimizing
+          development effort, and making it exceptionally easy for users to
+          tailor their QIIME 2 deployment to their needs.  </p>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row">
+      <h3>Exciting, easy to use features</h3>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/500x500">
+        <p class="text-justify">Automatically track your analyses with
+        decentralized data provenance - no more guesswork on what commands were
+        run!</p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/500x500">
+        <p class="text-justify">Interactively explore your data with beautiful
+        visualizations that provide new perspectives.</p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/500x500">
+        <p class="text-justify">Easily share results with your team, even those
+        without QIIME 2 installed.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <h3>Choose the interface that fits your needs</h3>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/500x500">
+        <h4>q2cli <small>the command line interface</small></h4>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/500x500">
+        <h4>q2studio <small>the graphical user interface</small></h4>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/500x500">
+        <h4>Artifact API <small>the data scientist's API</small></h4>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; 2016-2017, QIIME 2 development team</p>
+    </footer>
+  </div> <!-- /container -->
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 </html>
