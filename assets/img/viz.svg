@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <rect x="20" y="30" width="40" height="120" fill="#FF0000" />
+  <rect x="70" y="60" width="40" height="90" fill="#00FF00" />
+  <rect x="120" y="90" width="40" height="60" fill="#0000FF" />
+
+  <circle r="40" cx="80" cy="100" stroke="#000000" stroke-width="15" fill="none" />
+  <line x1="110" y1="130" x2="150" y2="170" stroke="#000000" stroke-width="15" />
+</svg>

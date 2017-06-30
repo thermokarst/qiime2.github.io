@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <defs>
+    <g id="node">
+      <circle r="10" stroke="#000000" stroke-width="5" fill="#FFFFFF" />
+    </g>
+  </defs>
+
+  <line x1="70" y1="40" x2="120" y2="35" stroke="#000000" stroke-width="3" />
+  <line x1="120" y1="35" x2="125" y2="80" stroke="#000000" stroke-width="3" />
+  <path d="M70 40 C 110 45, 110 45, 125 80" stroke="#000000" stroke-width="3" fill="transparent"/>
+  <line x1="125" y1="80" x2="100" y2="120" stroke="#000000" stroke-width="3" />
+  <line x1="100" y1="120" x2="100" y2="170" stroke="#000000" stroke-width="3" />
+
+  <use x="70" y="40" href="#node" />
+  <use x="120" y="35" href="#node" />
+  <use x="125" y="80" href="#node" />
+  <use x="100" y="120" href="#node" />
+  <use x="100" y="170" href="#node" />
+</svg>
