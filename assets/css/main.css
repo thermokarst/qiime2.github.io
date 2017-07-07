@@ -5,10 +5,18 @@ body {
 
 .jumbotron {
   padding-top: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
 .trim-the-top-margin {
   margin-top: 0px;
+}
+
+.bottom-pad {
+  padding-bottom: 15px;
+}
+
+.top-pad {
+  padding-top: 15px;
 }

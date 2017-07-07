@@ -35,9 +35,9 @@
           <li><a href="https://docs.qiime2.org">Docs</a></li>
           <li><a href="https://forum.qiime2.org">Forum</a></li>
           <li><a href="https://workshops.qiime2.org">Workshops</a></li>
-          <li><a href="https://view.qiime2.org">q2view</a></li>
+          <li><a href="https://view.qiime2.org">View</a></li>
         </ul>
-      </div><!--/.navbar-collapse -->
+      </div>
       </div>
     </nav>
   <div class="jumbotron">
@@ -62,7 +62,7 @@
       <div class="col-md-3">
         <img class="img-responsive center-block" src="./assets/img/provenance.svg">
         <p class="text-justify">Automatically track your analyses with
-        decentralized data provenance - no more guesswork on what commands were
+        decentralized data provenance &mdash; no more guesswork on what commands were
         run!</p>
       </div>
       <div class="col-md-3">
@@ -77,34 +77,42 @@
       </div>
       <div class="col-md-3">
         <img class="img-responsive center-block" src="./assets/img/plugin.svg">
-        <p class="text-justify">Plugin-based system - your favorite microbiome methods all in one place.</p>
+        <p class="text-justify">Plugin-based system &mdash; your favorite microbiome methods all in one place.</p>
       </div>
     </div>
 
     <hr>
 
-    <div class="row">
+    <div>
       <h3 class="trim-the-top-margin">Choose the interface that fits your needs</h3>
-      <div class="col-md-4">
-        <img class="img-responsive center-block" src="./assets/img/cli.svg">
-        <h4>
-          <a href="https://docs.qiime2.org/2017.6/interfaces/q2cli/">q2cli</a>
-          <small>the command line interface</small>
-        </h4>
+      <div class="row bottom-pad">
+        <div class="col-md-8">
+          <h4>
+            <a href="https://docs.qiime2.org/2017.6/interfaces/q2studio/">q2studio</a>
+            <small>the graphical user interface</small>
+          </h4>
+          <img class="img-responsive center-block" src="./assets/img/q2studio.png">
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              <h4>
+                <a href="https://docs.qiime2.org/2017.6/interfaces/artifact/">Artifact API</a>
+                <small>the data scientist's interface</small>
+              </h4>
+              <img class="img-responsive center-block" src="./assets/img/artifact_api.png">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img class="img-responsive center-block" src="./assets/img/studio.svg">
-        <h4>
-          <a href="https://docs.qiime2.org/2017.6/interfaces/q2studio/">q2studio</a>
-          <small>the graphical user interface</small>
-        </h4>
-      </div>
-      <div class="col-md-4">
-        <img class="img-responsive center-block" src="./assets/img/artifact-api.svg">
-        <h4>
-          <a href="https://docs.qiime2.org/2017.6/interfaces/artifact-api/">Artifact API</a>
-          <small>the data scientist's interface</small>
-        </h4>
+      <div class="row top-pad">
+        <div class="col-md-12">
+          <img class="img-responsive center-block" src="./assets/img/q2cli.png">
+          <h4>
+            <a href="https://docs.qiime2.org/2017.6/interfaces/q2cli/">q2cli</a>
+            <small>the command line interface</small>
+          </h4>
+        </div>
       </div>
     </div>
 
@@ -113,7 +121,7 @@
     <footer>
       <p>&copy; 2016-2017, QIIME 2 development team</p>
     </footer>
-  </div> <!-- /container -->
+  </div>
 
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
